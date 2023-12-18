@@ -1,3 +1,5 @@
+@model GerenciamentoUsuarios.Models.Usuario
+
 @{
     ViewData["Title"] = "Login";
 }
@@ -9,16 +11,18 @@
     <div class="cadastro-form">
         <h1>Entrar</h1>
         <form asp-action="AutenticarUsuario">
-            <label for=""></label>
-            <input type="text">
-
-            <label for=""></label>
-            <input type="text">
-
+            <div>
+                <label asp-for="Nome">Nome</label>
+                <input asp-for="Nome" type="text">
+            </div>
+            <div>
+                <label asp-for="Senha">Senha</label>
+                <input asp-for="Senha" type="password">
+            </div>
             <input type="submit" value="Entrar">
         </form>
         <div>
-            <p>Não possui uma conta ainda? <a asp-controller="#">Crie aqui</a></p>
+            <p>Não possui uma conta ainda? <a asp-controller="Usuario" asp-action="Cadastrar">Crie aqui</a></p>
         </div>
     </div>
 </section>

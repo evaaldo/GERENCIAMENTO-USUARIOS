@@ -1,4 +1,4 @@
-using GerenciamentoUsuarios.Models.Usuario;
+using GerenciamentoUsuarios.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GerenciamentoUsuarios.Context.UsuarioContext

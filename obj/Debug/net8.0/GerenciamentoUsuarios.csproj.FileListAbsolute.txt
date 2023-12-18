@@ -134,3 +134,4 @@ C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\bin\Debug\net8.0\runti
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\GerenciamentoUsuarios.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\GerenciamentoUsuarios.csproj.CopyComplete
+C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\GerenciamentoUsuarios.sourcelink.json

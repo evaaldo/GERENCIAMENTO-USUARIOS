@@ -1,3 +1,5 @@
+@model GerenciamentoUsuarios.Models.Usuario
+
 @{
     ViewData["Title"] = "Cadastrar";
 }
@@ -7,20 +9,25 @@
         <img src="" alt="Vetor de usuário">
     </div>
     <div class="cadastro-form">
-        <h1>Entrar</h1>
-        <form asp-action="AutenticarUsuario">
-            <label for=""></label>
-            <input type="text">
-
-            <label for=""></label>
-            <input type="text">
-
-            <input type="checkbox" name="">
-
+        <h1>Cadastrar</h1>
+        <form asp-action="Cadastrar">
+            <div>
+                <label asp-for="Nome">Nome</label>
+                <input asp-for="Nome" type="text">
+            </div>
+            <div>
+                <label asp-for="Senha">Senha</label>
+                <input asp-for="Senha" type="password">
+            </div>
+            <div>
+                <label asp-for="Admin">Admin</label>
+                <input asp-for="Admin" type="checkbox">
+            </div>
+            
             <input type="submit" value="Criar">
         </form>
         <div>
-            <p>Já possui uma conta? <a asp-controller="#">Acesse aqui</a></p>
+            <p>Já possui uma conta? <a asp-controller="Usuario" asp-action="Index">Acesse aqui</a></p>
         </div>
     </div>
 </section>
