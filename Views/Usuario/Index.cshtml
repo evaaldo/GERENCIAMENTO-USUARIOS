@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="cadastro">
+    <div class="cadastro-imagem">
+        <img src="" alt="Vetor de usuário">
+    </div>
+    <div class="cadastro-form">
+        <h1>Entrar</h1>
+        <form asp-action="AutenticarUsuario">
+            <label for=""></label>
+            <input type="text">
+
+            <label for=""></label>
+            <input type="text">
+
+            <input type="submit" value="Entrar">
+        </form>
+        <div>
+            <p>Não possui uma conta ainda? <a asp-controller="#">Crie aqui</a></p>
+        </div>
+    </div>
+</section>
