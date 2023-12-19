@@ -19,7 +19,34 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             return View();
         }
 
-        //TODO: LÓGICA DE AUTENTICAÇÃO
+        public IActionResult Autenticar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Autenticar(string nome, string senha)
+        {
+            var usuarios = _context.Usuarios.ToList();
+            int count = 0;
+
+            foreach(Usuario usuario in usuarios)
+            {
+                if(nome == usuario.Nome && senha == usuario.Senha)
+                {
+                    count++;
+                }
+            }
+
+            if(count == 1)
+            {
+               return Ok(nome); 
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
 
         public IActionResult Cadastrar()
         {
@@ -38,6 +65,6 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             }
 
             return View();
-        }
+        }        
     }
 }
