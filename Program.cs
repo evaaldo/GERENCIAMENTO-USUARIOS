@@ -1,4 +1,6 @@
 using GerenciamentoUsuarios.Context.UsuarioContext;
+using GerenciamentoUsuarios.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

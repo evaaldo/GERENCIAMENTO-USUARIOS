@@ -1,4 +1,4 @@
-@model GerenciamentoUsuarios.Models.Usuario
+@model List<GerenciamentoUsuarios.Models.Usuario>
 
 @{
     ViewData["Title"] = "Listagem";
@@ -6,4 +6,24 @@
 
 <h1>Listagem de usuários</h1>
 
-<h2>oi</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Usuário</th>
+            <th>Senha</th>
+            <th>Administrador</th>
+        </tr>
+    </thead>
+    @foreach(Usuario usuario in Model)
+    {
+        <tbody>
+            <tr>
+                <td>@usuario.ID</td>
+                <td>@usuario.Nome</td>
+                <td>@usuario.Senha</td>
+                <td>@usuario.Admin</td>
+            </tr>
+        </tbody>
+    }
+</table>

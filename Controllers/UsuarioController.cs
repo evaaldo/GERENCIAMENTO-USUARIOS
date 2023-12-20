@@ -19,36 +19,6 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             return View();
         }
 
-        public IActionResult Autenticar()
-        {
-            return View();
-        }
-
-        //TODO: Melhorar sistema de autenticação de usuário
-        [HttpPost]
-        public IActionResult Autenticar(string nome, string senha)
-        {
-            var usuarios = _context.Usuarios.ToList();
-            int count = 0;
-
-            foreach(Usuario usuario in usuarios)
-            {
-                if(nome == usuario.Nome && senha == usuario.Senha)
-                {
-                    count++;
-                }
-            }
-
-            if(count == 1)
-            {
-               return Ok(nome); 
-            }
-            else
-            {
-                return NotFound();
-            }
-        }
-
         public IActionResult Cadastrar()
         {
             return View();
@@ -66,6 +36,28 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             }
 
             return View();
-        }        
+        }
+
+        public ActionResult Listagem(int id)
+        {
+            var usuarios = _context.Usuarios.ToList();
+
+            return View(usuarios);
+        }   
+
+        [HttpPost]
+        public IActionResult Index(string nome, string senha)
+        {
+            var usuarios = _context.Usuarios.ToList();
+
+            foreach(Usuario usuario in usuarios)
+            {
+                if(nome == usuario.Nome && senha == usuario.Senha)
+                {
+                    return RedirectToAction(nameof(Listagem));
+                }                
+            }
+            return NotFound();
+        }       
     }
 }
