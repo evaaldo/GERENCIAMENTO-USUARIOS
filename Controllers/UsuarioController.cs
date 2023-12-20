@@ -24,6 +24,7 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             return View();
         }
 
+        //TODO: Melhorar sistema de autenticação de usuário
         [HttpPost]
         public IActionResult Autenticar(string nome, string senha)
         {
