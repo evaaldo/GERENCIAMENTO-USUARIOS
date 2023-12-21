@@ -1,22 +1,98 @@
-html {
-  font-size: 14px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Montserrat:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+*  {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin-bottom: 60px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/FUNDO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  gap: 3em;
+  padding: 5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.cadastro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cadastro div img {
+  width: 25em;
+}
+
+.cadastro div h1 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+.cadastro form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cadastro form label {
+  margin-bottom: .5em;
+}
+
+.cadastro form input {
+  border-radius: 5px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: .25em 0;
+}
+
+.cadastro div .btn {
+  margin-top: .5em;
+  padding: .5em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(122, 122, 230);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border: 0px;
+  transition: .25s;
+}
+
+.cadastro div .btn:hover {
+  background-color: black;
+}
+
+.cadastro div p {
+  margin-top: 3em;
+}
+
+.cadastro div a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(122, 122, 230);
+  transition: .25s;
+}
+
+.cadastro div a:hover {
+  color: black;
 }

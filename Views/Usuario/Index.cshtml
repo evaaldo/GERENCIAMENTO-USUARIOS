@@ -1,28 +1,40 @@
 @model GerenciamentoUsuarios.Models.Usuario
 
-@{
-    ViewData["Title"] = "Login";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Login</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GerenciamentoUsuarios.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <section class="cadastro">
+                <div class="cadastro-form">
+                    <h1>Entrar</h1>
+                    <form asp-action="Index">
+                        <div>
+                            <label asp-for="Nome">Nome</label>
+                            <input asp-for="Nome" type="text">
+                        </div>
+                        <div>
+                            <label asp-for="Senha">Senha</label>
+                            <input asp-for="Senha" type="password">
+                        </div>
+                        <button type="submit" value="" class="btn"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    </form>
+                    <div>
+                        <p>Não possui uma conta ainda? <a asp-controller="Usuario" asp-action="Cadastrar">Crie aqui</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
 
-<section class="cadastro">
-    <div class="cadastro-imagem">
-        <img src="" alt="Vetor de usuário">
-    </div>
-    <div class="cadastro-form">
-        <h1>Entrar</h1>
-        <form asp-action="Index">
-            <div>
-                <label asp-for="Nome">Nome</label>
-                <input asp-for="Nome" type="text">
-            </div>
-            <div>
-                <label asp-for="Senha">Senha</label>
-                <input asp-for="Senha" type="password">
-            </div>
-            <input type="submit" value="Entrar">
-        </form>
-        <div>
-            <p>Não possui uma conta ainda? <a asp-controller="Usuario" asp-action="Cadastrar">Crie aqui</a></p>
-        </div>
-    </div>
-</section>
+

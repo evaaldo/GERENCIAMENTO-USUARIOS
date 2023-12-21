@@ -20,9 +20,7 @@ C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\stati
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GerenciamentoUsuarios.props
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GerenciamentoUsuarios.props
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\scopedcss\bundle\GerenciamentoUsuarios.styles.css
-C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\scopedcss\projectbundle\GerenciamentoUsuarios.bundle.scp.css
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\GerenciamentoUsuarios.dll
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\refint\GerenciamentoUsuarios.dll
 C:\Users\User\Desktop\vscode\dotnet\GerenciamentoUsuarios\obj\Debug\net8.0\GerenciamentoUsuarios.pdb

@@ -1,16 +1,32 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GerenciamentoUsuarios.bundle.scp.css",
-      "PackagePath": "staticwebassets\\GerenciamentoUsuarios.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO.avif",
+      "PackagePath": "staticwebassets\\img\\FUNDO.avif"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO.jpeg",
+      "PackagePath": "staticwebassets\\img\\FUNDO.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO.jpg",
+      "PackagePath": "staticwebassets\\img\\FUNDO.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\PET-CADASTRO.jpg",
+      "PackagePath": "staticwebassets\\img\\PET-CADASTRO.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\PET-LOGIN.jpg",
+      "PackagePath": "staticwebassets\\img\\PET-LOGIN.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\js\\site.js",
