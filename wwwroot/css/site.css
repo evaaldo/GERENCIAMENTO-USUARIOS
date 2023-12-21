@@ -65,6 +65,12 @@ body {
   padding: .25em 0;
 }
 
+.cadastro form .admin-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cadastro div .btn {
   margin-top: .5em;
   padding: .5em 1.5em;
@@ -95,4 +101,17 @@ body {
 
 .cadastro div a:hover {
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .cadastro {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+
+  body {
+    backdrop-filter: blur(20px);
+  }
+
 }

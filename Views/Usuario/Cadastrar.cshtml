@@ -1,33 +1,48 @@
 @model GerenciamentoUsuarios.Models.Usuario
 
-@{
-    ViewData["Title"] = "Cadastrar";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Cadastro</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GerenciamentoUsuarios.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <section class="cadastro criar">
+                <div class="cadastro-form">
+                    <h1>Cadastrar</h1>
+                    <form asp-action="Cadastrar">
+                        <div>
+                            <label asp-for="Nome">Nome</label>
+                            <input asp-for="Nome" type="text">
+                        </div>
+                        <div>
+                            <label asp-for="Senha">Senha</label>
+                            <input asp-for="Senha" type="password">
+                        </div>
+                        <div class="admin-form">
+                            <label asp-for="Admin">Administrador</label>
+                            <input asp-for="Admin" type="checkbox">
+                        </div>
+                        
+                        <button type="submit" value="" class="btn"><i class="fa-solid fa-plus"></i></button>
+                    </form>
+                    <div>
+                        <p>Já possui uma conta conosco? <a asp-controller="Usuario" asp-action="Index">Acesse aqui</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
 
-<section class="cadastro">
-    <div class="cadastro-imagem">
-        <img src="" alt="Vetor de usuário">
-    </div>
-    <div class="cadastro-form">
-        <h1>Cadastrar</h1>
-        <form asp-action="Cadastrar">
-            <div>
-                <label asp-for="Nome">Nome</label>
-                <input asp-for="Nome" type="text">
-            </div>
-            <div>
-                <label asp-for="Senha">Senha</label>
-                <input asp-for="Senha" type="password">
-            </div>
-            <div>
-                <label asp-for="Admin">Admin</label>
-                <input asp-for="Admin" type="checkbox">
-            </div>
-            
-            <input type="submit" value="Criar">
-        </form>
-        <div>
-            <p>Já possui uma conta? <a asp-controller="Usuario" asp-action="Index">Acesse aqui</a></p>
-        </div>
-    </div>
-</section>
+
+
+
+
