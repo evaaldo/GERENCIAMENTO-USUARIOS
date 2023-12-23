@@ -38,6 +38,56 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Editar(int id)
+        {
+            var usuario = _context.Usuarios.Find(id);
+
+            if(usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(id);
+        }
+
+        public ActionResult Editar(Usuario usuario)
+        {
+            var usuarioBanco = _context.Usuarios.Find(usuario.ID);
+
+            usuarioBanco.Nome = usuario.Nome;
+            usuarioBanco.Senha = usuario.Senha;
+            usuarioBanco.Admin = usuario.Admin;
+
+            _context.Usuarios.Update(usuarioBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Listagem));
+        }
+
+        public ActionResult Excluir(int id)
+        {
+            var usuario = _context.Usuarios.Find(id);
+
+            if(usuario == null)
+            {
+                return NotFound();
+            }
+
+            return RedirectToAction(nameof(usuario));
+        }
+
+        [HttpPost]
+        public ActionResult Excluir(Usuario usuario)
+        {
+            var usuarioBanco = _context.Usuarios.Find(usuario.ID);
+
+            _context.Usuarios.Remove(usuarioBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Listagem));
+        }
+
         public ActionResult Listagem(int id)
         {
             var usuarios = _context.Usuarios.ToList();
