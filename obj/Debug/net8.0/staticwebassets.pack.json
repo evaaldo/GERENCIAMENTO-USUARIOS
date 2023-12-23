@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO-CADASTRO.jpg",
+      "PackagePath": "staticwebassets\\img\\FUNDO-CADASTRO.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO.avif",
       "PackagePath": "staticwebassets\\img\\FUNDO.avif"
     },

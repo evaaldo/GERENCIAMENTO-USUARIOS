@@ -4,26 +4,47 @@
     ViewData["Title"] = "Listagem";
 }
 
-<h1>Listagem de usuários</h1>
+@model GerenciamentoUsuarios.Models.Usuario
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Usuário</th>
-            <th>Senha</th>
-            <th>Administrador</th>
-        </tr>
-    </thead>
-    @foreach(Usuario usuario in Model)
-    {
-        <tbody>
-            <tr>
-                <td>@usuario.ID</td>
-                <td>@usuario.Nome</td>
-                <td>@usuario.Senha</td>
-                <td>@usuario.Admin</td>
-            </tr>
-        </tbody>
-    }
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Login</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GerenciamentoUsuarios.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <section class="listagem">
+        <a asp-action="Index"><i class="fa-solid fa-chevron-left"></i></a>
+
+        <h1>Listagem de usuários</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuário</th>
+                    <th>Senha</th>
+                    <th>Administrador</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            @foreach(Usuario usuario in Model)
+            {
+                <tbody>
+                    <tr>
+                        <td>@usuario.ID</td>
+                        <td>@usuario.Nome</td>
+                        <td>@usuario.Senha</td>
+                        <td>@usuario.Admin</td>
+                        <td><a asp-action="Edidar"><i class="fa-solid fa-pen-to-square"></i></a><a asp-action="Excluir"><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </section>
+</body>
+</html>

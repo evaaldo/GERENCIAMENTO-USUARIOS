@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WygCgVew85xKeA5KJWqTn/nDQ+WyC95Yq2dZpcyfPCo=",
+  "Hash": "wV9SmuTrnmwQm8vREfw0WZuEpo4Ci7v1trEgaxBj4O8=",
   "Source": "GerenciamentoUsuarios",
   "BasePath": "_content/GerenciamentoUsuarios",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO-CADASTRO.jpg",
+      "SourceId": "GerenciamentoUsuarios",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\",
+      "BasePath": "_content/GerenciamentoUsuarios",
+      "RelativePath": "img/FUNDO-CADASTRO.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\FUNDO-CADASTRO.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\vscode\\dotnet\\GerenciamentoUsuarios\\wwwroot\\img\\FUNDO.avif",
