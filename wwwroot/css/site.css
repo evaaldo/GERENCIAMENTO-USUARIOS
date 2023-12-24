@@ -18,6 +18,10 @@ body {
   color: white;
 }
 
+.cadastrarSite {
+  background-image: url(../img/FUNDO-CADASTRO.jpg);
+}
+
 .cadastro {
   display: flex;
   justify-content: center;
@@ -76,7 +80,7 @@ body {
   padding: .5em 1.5em;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(122, 122, 230);
+  background-color: rgb(80, 80, 196);
   color: white;
   font-weight: 700;
   text-align: center;
@@ -86,6 +90,7 @@ body {
 
 .cadastro div .btn:hover {
   background-color: black;
+  color: white;
 }
 
 .cadastro div p {
@@ -95,7 +100,7 @@ body {
 .cadastro div a {
   text-decoration: none;
   font-weight: 700;
-  color: rgb(122, 122, 230);
+  color: rgb(80, 80, 196);
   transition: .25s;
 }
 
