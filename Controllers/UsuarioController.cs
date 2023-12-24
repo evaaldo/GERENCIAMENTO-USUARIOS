@@ -113,12 +113,19 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
             return RedirectToAction(nameof(Listagem));
         }
 
-        public ActionResult Listagem(int id)
+        public ActionResult Listagem()
         {
             var usuarios = _context.Usuarios.ToList();
 
             return View(usuarios);
         }   
+
+        public ActionResult ListagemNaoAdmin()
+        {
+            var usuarios = _context.Usuarios.ToList();
+
+            return View(usuarios);
+        }
 
         [HttpPost]
         public IActionResult Index(string nome, string senha)
@@ -127,10 +134,15 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
 
             foreach(Usuario usuario in usuarios)
             {
-                if(nome == usuario.Nome && senha == usuario.Senha)
+                if(nome == usuario.Nome && senha == usuario.Senha && usuario.Admin == true)
                 {
                     return RedirectToAction(nameof(Listagem));
-                }                
+                }  
+
+                if(nome == usuario.Nome && senha == usuario.Senha && usuario.Admin == false)
+                {
+                    return RedirectToAction(nameof(ListagemNaoAdmin));
+                }                    
             }
 
             TempData["Mensagem"] = "Esse usuario/senha nao existe! Cadastre-o para prosseguir.";
