@@ -16,29 +16,20 @@
 
         <h1>Listagem de usuários</h1>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Usuário</th>
-                    <th>Senha</th>
-                    <th>Administrador</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
+        <div class="listagemContainers">
             @foreach(Usuario usuario in Model)
             {
-                <tbody>
-                    <tr>
-                        <td>@usuario.ID</td>
-                        <td>@usuario.Nome</td>
-                        <td>@usuario.Senha</td>
-                        <td>@usuario.Admin</td>
-                        <td><a asp-action="Editar" asp-route-id="@usuario.ID"><i class="fa-solid fa-pen-to-square"></i></a><a asp asp-action="Excluir" asp-route-id="@usuario.ID"><i class="fa-solid fa-trash"></i></a></td>
-                    </tr>
-                </tbody>
+                <div class="listagemContainer">
+                    <h3>@usuario.Nome</h3>
+                    <p>Senha: @usuario.Senha</p>
+                    <p>Administrador: @usuario.Admin</p>
+                    <div>
+                        <a asp-action="Editar" asp-route-id="@usuario.ID"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp asp-action="Excluir" asp-route-id="@usuario.ID"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
             }
-        </table>
+        </div>
     </section>
 </body>
 </html>
