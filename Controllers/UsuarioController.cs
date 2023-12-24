@@ -40,6 +40,12 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
                         TempData["MensagemCadastro"] = "Um usuario com esse nome ja esta cadastrado! Cadastre um novo.";
                         return RedirectToAction(nameof(Cadastrar));                        
                     }
+
+                    if(usuario.Nome == null || usuario.Senha == null)
+                    {
+                        TempData["MensagemCadastro"] = "Preencha os campos para cadastrar.";
+                        return RedirectToAction(nameof(Cadastrar));
+                    }
                 }
 
                 _context.Usuarios.Add(usuario);
