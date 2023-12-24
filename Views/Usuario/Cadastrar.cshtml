@@ -1,5 +1,9 @@
 @model GerenciamentoUsuarios.Models.Usuario
 
+@{
+    var mensagem = TempData["MensagemCadastro"] as string;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +37,13 @@
                         </div>
                         
                         <button type="submit" value="" class="btn"><i class="fa-solid fa-plus"></i></button>
+
+                        @if (!string.IsNullOrEmpty(mensagem))
+                        {
+                            <script>
+                                alert('@mensagem');
+                            </script>
+                        }
                     </form>
                     <div>
                         <p>Já possui uma conta conosco? <a asp-controller="Usuario" asp-action="Index">Acesse aqui</a></p>

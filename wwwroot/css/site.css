@@ -222,3 +222,73 @@ body {
   background-color: black;
   opacity: .8;
 }
+
+@media screen and (max-width: 1024px) {
+
+  
+
+}
+
+.editar {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.editar h1 {
+  margin-bottom: 0;
+}
+
+.editarForm {
+  background-color: white;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: black;
+}
+
+.editarForm div {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.editarForm label {
+  margin-bottom: .5em;
+}
+
+.editarForm input {
+  border-radius: 5px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: .25em 0;
+}
+
+.editarAcoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.editarForm button {
+  text-align: center;
+  margin-top: 2em;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  padding: .25em 1em;
+  background-color: cadetblue;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.editarForm button:hover {
+  background-color: black;
+}
