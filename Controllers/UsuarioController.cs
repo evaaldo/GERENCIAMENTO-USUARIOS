@@ -74,7 +74,7 @@ namespace GerenciamentoUsuario.Controllers.UsuarioController
                 return NotFound();
             }
 
-            return RedirectToAction(nameof(usuario));
+            return View(usuario);
         }
 
         [HttpPost]

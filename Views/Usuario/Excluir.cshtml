@@ -1,0 +1,28 @@
+@model GerenciamentoUsuarios.Models.Usuario
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Excluir</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GerenciamentoUsuarios.styles.css" asp-append-version="true" />
+    
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <section class="deletar">
+        <h1>Tem certeza que deseja excluir este usuário?</h1>
+        <div>
+            <a class="btnVoltar" asp-action="Listagem">Voltar</a>
+            <form asp-action="Excluir">
+                <button class="btnExcluir" type="submit">Excluir</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
+

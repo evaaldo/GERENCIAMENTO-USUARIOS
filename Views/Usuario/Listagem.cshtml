@@ -34,7 +34,7 @@
                         <td>@usuario.Nome</td>
                         <td>@usuario.Senha</td>
                         <td>@usuario.Admin</td>
-                        <td><a asp-action="Edidar"><i class="fa-solid fa-pen-to-square"></i></a><a asp-action="Excluir"><i class="fa-solid fa-trash"></i></a></td>
+                        <td><a asp-action="Editar"><i class="fa-solid fa-pen-to-square"></i></a><a asp asp-action="Excluir" asp-route-id="@usuario.ID"><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
                 </tbody>
             }
